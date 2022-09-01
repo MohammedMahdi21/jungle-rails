@@ -9,7 +9,7 @@
   <div>
     <% if product.quantity == 0%>
       <div>
-      <span class="badge bg-danger">-Sold Out-</span>
+      <span class="badge bg-danger">Sold Out</span>
       </div>
     <% else %>
       <%= button_to add_item_cart_path(product_id: product.id), class: 'btn' ,
