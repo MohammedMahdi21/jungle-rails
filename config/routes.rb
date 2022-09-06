@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  get '/register' => 'users#new'
+  post '/register' => 'users#create'
+
   get 'user/index'
   namespace :admin do
     get 'categories/index'
