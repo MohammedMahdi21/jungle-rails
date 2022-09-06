@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  get 'user/index'
   namespace :admin do
     get 'categories/index'
   end
