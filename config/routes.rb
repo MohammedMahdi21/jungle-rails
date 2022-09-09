@@ -1,7 +1,15 @@
 Rails.application.routes.draw do
 
+  # Register routes
   get '/register' => 'users#new'
   post '/register' => 'users#create'
+
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
+  get '/logout' => 'sessions#destroy'
+
+  get '/signup' => 'users#new'
+  post '/users' => 'users#create'
 
   get 'user/index'
   namespace :admin do
